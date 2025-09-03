@@ -1,14 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int arr[] = {1, 2, 3, 4, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int arr[5] = {1, 2, 3, 4, 5};
+    int n = 5;
     int sum = 0;
+    int i;
 
-    for (int i = 0; i < n; i++) {
-        sum += arr[i];
+    for (i = 0; i < n; i++) {
+        sum = sum + arr[i];
     }
 
-    printf("Sum of array elements: %d\n", sum);
+    printf("The sum is %d\n", sum);
+
     return 0;
 }
